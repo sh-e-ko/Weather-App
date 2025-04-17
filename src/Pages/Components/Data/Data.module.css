@@ -1,0 +1,40 @@
+.container {
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.16);
+        /* خلفية شفافة بيضاء */
+        border-radius: 15px;
+        /* حدود دائرية */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* تأثير الظل */
+        backdrop-filter: blur(10px);
+        /* تأثير التمويه لخلق تأثير الزجاج */
+        -webkit-backdrop-filter: blur(10px);
+        /* دعم لمتصفحات Webkit مثل Safari */
+        color: white;
+
+}
+.containt{
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.text{
+    display: flex;
+    gap: 40px;
+}
+.load{
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(54, 72, 194);
+    font-size: 25px;
+}
