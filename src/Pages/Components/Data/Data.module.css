@@ -37,20 +37,20 @@
     font-size: 25px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
-        width: 90%;
-        height: auto;
-        padding: 20px 10px;
+        width: 40%;
+        height: 80%;
+        ;
+        /* padding: 20px 10px; */
     }
 
     .text {
-        flex-direction: column;
         gap: 20px;
     }
 
     .load {
-        font-size: 20px;
+        font-size: 18px;
         gap: 20px;
     }
-} */
+}
