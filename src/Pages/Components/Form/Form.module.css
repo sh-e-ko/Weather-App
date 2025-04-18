@@ -1,45 +1,36 @@
 .Form {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin-top: 50px;
+    padding: 0 15px;
 }
 
 .inputCity,
 .inputCountry {
     display: flex;
     flex-direction: column;
-    /* width: 450px; */
-
+    flex: 1 1 300px;
+    max-width: 400px;
 }
 
-.inputCity input {
-    background: rgba(255, 255, 255, 0.16);
-    /* خلفية شفافة بيضاء */
-    border-radius: 15px;
-    /* حدود دائرية */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* تأثير الظل */
-    backdrop-filter: blur(10px);
-    /* تأثير التمويه لخلق تأثير الزجاج */
-    -webkit-backdrop-filter: blur(10px);
-    /* دعم لمتصفحات Webkit مثل Safari */
-    color: white;
-}
-.input{
+.input {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.input span{
+
+.input span {
     font-size: 14px;
     margin-left: 10px;
     color: #fff;
 }
+
 .input input {
-    width: 400px;
+    width: 100%;
     padding: 12px 45px 12px 15px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -58,7 +49,9 @@
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.15);
 }
-
+.input input::placeholder{
+    color: #fff;
+}
 
 .btn {
     padding: 12px 25px;
@@ -85,4 +78,22 @@
 .btn:active {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .Form {
+        flex-direction: column;
+        align-items:center;
+        gap: 20px;
+    }
+
+    .inputCity,
+    .inputCountry {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input input {
+        width: 100%;
+    }
 }
